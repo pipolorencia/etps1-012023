@@ -1,4 +1,4 @@
-package com.example.parcial04.DB;
+package com.example.parcial4;
 
 import androidx.annotation.Nullable;
 
@@ -68,6 +68,28 @@ public class ConexionSqlite extends SQLiteOpenHelper {
         valoresCliente2.put("sDireccionCliente", "Avenida 456");
         valoresCliente2.put("sCiudadCliente", "Ciudad B");
         db.insert("MD_Clientes", null, valoresCliente2);
+        //registro3
+        ContentValues valoresCliente3 = new ContentValues();
+        valoresCliente3.put("sNombreCliente", "María");
+        valoresCliente3.put("sApellidosCliente", "López");
+        valoresCliente3.put("sDireccionCliente", "Avenida 456");
+        valoresCliente3.put("sCiudadCliente", "Ciudad B");
+        db.insert("MD_Clientes", null, valoresCliente3);
+        //registro4
+        ContentValues valoresCliente4 = new ContentValues();
+        valoresCliente4.put("sNombreCliente", "María");
+        valoresCliente4.put("sApellidosCliente", "López");
+        valoresCliente4.put("sDireccionCliente", "Avenida 456");
+        valoresCliente4.put("sCiudadCliente", "Ciudad B");
+        db.insert("MD_Clientes", null, valoresCliente4);
+        //registro5
+        ContentValues valoresCliente5 = new ContentValues();
+        valoresCliente5.put("sNombreCliente", "María");
+        valoresCliente5.put("sApellidosCliente", "López");
+        valoresCliente5.put("sDireccionCliente", "Avenida 456");
+        valoresCliente5.put("sCiudadCliente", "Ciudad B");
+        db.insert("MD_Clientes", null, valoresCliente5);
+
 
         // Inserción de registros en la tabla MD_Vehiculos
         //registro1
@@ -80,6 +102,21 @@ public class ConexionSqlite extends SQLiteOpenHelper {
         valoresVehiculo2.put("sMarca", "Honda");
         valoresVehiculo2.put("sModelo", "Civic");
         db.insert("MD_Vehiculos", null, valoresVehiculo2);
+        //registro3
+        ContentValues valoresVehiculo3 = new ContentValues();
+        valoresVehiculo3.put("sMarca", "Honda");
+        valoresVehiculo3.put("sModelo", "Civic");
+        db.insert("MD_Vehiculos", null, valoresVehiculo3);
+        //registro4
+        ContentValues valoresVehiculo4 = new ContentValues();
+        valoresVehiculo4.put("sMarca", "Honda");
+        valoresVehiculo4.put("sModelo", "Civic");
+        db.insert("MD_Vehiculos", null, valoresVehiculo4);
+        //registro5
+        ContentValues valoresVehiculo5 = new ContentValues();
+        valoresVehiculo5.put("sMarca", "Honda");
+        valoresVehiculo5.put("sModelo", "Civic");
+        db.insert("MD_Vehiculos", null, valoresVehiculo5);
 
         // Inserción de registros en la tabla MD_ClienteVehiculo
         //registro1
@@ -96,6 +133,27 @@ public class ConexionSqlite extends SQLiteOpenHelper {
         valoresClienteVehiculo2.put("sMatricula", "DEF456");
         valoresClienteVehiculo2.put("iKilometros", 20000);
         db.insert("MD_ClienteVehiculo", null, valoresClienteVehiculo2);
+        //registro3
+        ContentValues valoresClienteVehiculo3 = new ContentValues();
+        valoresClienteVehiculo3.put("ID_Cliente", 2);
+        valoresClienteVehiculo3.put("ID_Vehiculo", 3);
+        valoresClienteVehiculo3.put("sMatricula", "DEF456");
+        valoresClienteVehiculo3.put("iKilometros", 20000);
+        db.insert("MD_ClienteVehiculo", null, valoresClienteVehiculo3);
+        //registro4
+        ContentValues valoresClienteVehiculo4 = new ContentValues();
+        valoresClienteVehiculo4.put("ID_Cliente", 2);
+        valoresClienteVehiculo4.put("ID_Vehiculo", 3);
+        valoresClienteVehiculo4.put("sMatricula", "DEF456");
+        valoresClienteVehiculo4.put("iKilometros", 20000);
+        db.insert("MD_ClienteVehiculo", null, valoresClienteVehiculo4);
+        //registro2
+        ContentValues valoresClienteVehiculo5 = new ContentValues();
+        valoresClienteVehiculo5.put("ID_Cliente", 2);
+        valoresClienteVehiculo5.put("ID_Vehiculo", 3);
+        valoresClienteVehiculo5.put("sMatricula", "DEF456");
+        valoresClienteVehiculo5.put("iKilometros", 20000);
+        db.insert("MD_ClienteVehiculo", null, valoresClienteVehiculo5);
 
         db.close();
     }

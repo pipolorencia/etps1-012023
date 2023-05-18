@@ -1,4 +1,4 @@
-package com.example.parcial04;
+package com.example.parcial4;
 
 import org.junit.Test;
 
